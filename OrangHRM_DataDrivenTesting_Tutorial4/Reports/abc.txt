@@ -1,0 +1,6 @@
+
+Scenario: Validate login functionality        # src/test/java/Features/OrangeHRM.feature:5
+  Given user is on login Page                 # StepDefinition.OrangeHRM_TestSteps.user_is_on_login_page()
+  When user enter valid username and password # StepDefinition.OrangeHRM_TestSteps.user_enter_valid_username_and_password(io.cucumber.datatable.DataTable)
+    | Admin | admin123 |
+  Then user click on login button             # StepDefinition.OrangeHRM_TestSteps.user_click_on_login_button()
